@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const lines = [
-        new TextLine('SOFIA BASCUR', true),
+        
         new TextLine('IGNACIO CIRE', false)
     ];
 
