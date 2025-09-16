@@ -20,7 +20,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand fa-2x" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/menu.php">Menu</a>
+    <a class="navbar-brand fa-2x" href="http://localhost/info_autos/proyecto-sql-php-html/TP4%20din%C3%A1mica/menu.php">Menu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
