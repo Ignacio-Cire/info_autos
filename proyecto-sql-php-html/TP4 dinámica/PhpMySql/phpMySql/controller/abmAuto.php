@@ -1,6 +1,6 @@
 <?php
 
-namespace Administador\ClonePhpMySql\Controller;
+
 class abmAuto
 {
 
@@ -10,7 +10,7 @@ class abmAuto
         $auto = new Auto();
         $auto->setPatente($datosAuto['Patente']);
         $auto->setMarca($datosAuto['Marca']);
-        $auto->setModelo($datosAuto['Modelo']);
+        $auto->setModelo($datosAuto['Modelo']); 
         $auto->setDniDuenio($datosAuto['DniDuenio']);
 
         if ($auto->insertar()) {

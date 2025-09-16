@@ -2,7 +2,8 @@
 
 ## Descripción
 Este proyecto está diseñado para gestionar información sobre autos y personas utilizando PHP, MySQL y PDO. Implementa un sistema basado en el patrón Modelo-Vista-Controlador (MVC), con una base de datos que contiene dos tablas: auto y persona. Cada auto tiene una referencia única a su dueño (persona). El proyecto abarca la creación de varias páginas PHP para manejar los datos de autos y personas, junto con formularios para agregar, modificar y buscar registros. Además, se ha implementado un sistema de seguridad CAPTCHA en el registro de nuevas personas para evitar el uso de bots.
-![Demostración del funcionamiento](./proyecto-sql-php.gif) 
+
+![Demostración del funcionamiento]() 
 
 ## Estructura del Proyecto
 

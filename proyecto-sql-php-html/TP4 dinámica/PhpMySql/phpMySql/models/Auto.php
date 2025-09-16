@@ -63,8 +63,7 @@ class Auto extends BaseDatos
 
     // Método para insertar un nuevo registro en la base de datos
     public function insertar()
-    {
-        // Se crea una instancia de la clase BaseDatos
+    { // Se crea una instancia de la clase BaseDatos
         $baseDatos = new BaseDatos();
         // Consulta SQL para insertar un auto
         $sql = "INSERT INTO auto (Patente, Marca, Modelo, DniDuenio) VALUES (:patente, :marca, :modelo, :dniDuenio)";
@@ -144,33 +143,6 @@ class Auto extends BaseDatos
         return $arregloAutos;
     }
 
-    // Método estático para buscar autos
-//     public static function buscar($patente) {
-//         $baseDatos = new BaseDatos();
-
-//         // Crear la consulta SQL con parámetros
-//         $sql = "SELECT * FROM auto WHERE Patente = :patente";
-//         // Preparar la consulta
-//         $consulta = $baseDatos->prepare($sql);
-//         // Vincular los parámetros
-//         $consulta->bindParam(':patente', $patente);
-//         // Ejecutar y obtener el resultado
-//         $consulta->execute();
-//         $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
-
-//         // Convertir el resultado en un arreglo de objetos Auto
-//         $autos = [];
-//         foreach ($resultado as $row) {
-//             $objAuto = new Auto(
-//                 $row['Patente'],
-//                 $row['Marca'],
-//                 $row['Modelo'],
-//                 $row['DniDuenio']
-//             );
-//             $autos[] = $objAuto;
-//         }
-
-//         return $autos;
-//     }
+    
 
 }

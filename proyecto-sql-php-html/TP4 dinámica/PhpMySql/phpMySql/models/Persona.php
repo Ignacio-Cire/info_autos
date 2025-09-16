@@ -2,11 +2,6 @@
 
 
 
-namespace Administador\ClonePhpMySql\Model; //  que este sea el namespace correcto
-
-use Administador\ClonePhpMySql\Database\BaseDatos; // Ajusta el namespace de BaseDatos según su ubicación
-
-
 class Persona extends BaseDatos
 {
     // Atributos privados de la clase Persona

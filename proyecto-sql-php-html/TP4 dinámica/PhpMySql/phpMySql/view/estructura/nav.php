@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/VerAutos.php">Ver autos</a>
+                <a class="nav-link" href="../view/VerAutos.php">Ver autos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/buscarAuto.php">Buscar Auto</a>

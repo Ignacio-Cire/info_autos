@@ -63,8 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const lines = [
-        
-        new TextLine('IGNACIO CIRE', false)
+   
+        new TextLine('IGNACIO CIRE', false),
+       
     ];
 
     function animate() {
