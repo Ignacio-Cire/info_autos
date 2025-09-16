@@ -19,10 +19,11 @@ include_once '../view/estructura/nav.php';
 ?>
  <br>
 <?php
-require '../vendor/autoload.php';
+include_once '../models/Auto.php';
+include_once '../models/Persona.php';
 
 // Obtener todos los autos
-$autos = Auto::listar("1=1"); // Ajusta la consulta según la implementación
+$autos = Auto::listar(); // Ajusta la consulta según la implementación
 
 echo '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">';
 echo '<link rel="stylesheet" href="./assets/css/error.css">';

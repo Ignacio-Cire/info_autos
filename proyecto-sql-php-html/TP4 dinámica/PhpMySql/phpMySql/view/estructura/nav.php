@@ -27,25 +27,25 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="../view/VerAutos.php">Ver autos</a>
+                <a class="nav-link" href="/info_autos/proyecto-sql-php-html/TP4 dinámica/PhpMySql/phpMySql/view/VerAutos.php">Ver autos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/buscarAuto.php">Buscar Auto</a>
+                <a class="nav-link" href="/info_autos/proyecto-sql-php-html/TP4 dinámica/PhpMySql/phpMySql/view/buscarAuto.php">Buscar Auto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/listaPersonas.php">Ver todas las personas</a>
+                <a class="nav-link" href="/info_autos/proyecto-sql-php-html/TP4 dinámica/PhpMySql/phpMySql/view/listaPersonas.php">Ver todas las personas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/nuevaPersona.php">Nueva persona</a>
+                <a class="nav-link" href="/info_autos/proyecto-sql-php-html/TP4 dinámica/PhpMySql/phpMySql/view/nuevaPersona.php">Nueva persona</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/nuevoAuto.php">Nuevo Auto</a>
+                <a class="nav-link" href="/info_autos/proyecto-sql-php-html/TP4 dinámica/PhpMySql/phpMySql/view/nuevoAuto.php">Nuevo Auto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/cambioDuenio.php">Cambiar dueño</a>
+                <a class="nav-link" href="/info_autos/proyecto-sql-php-html/TP4 dinámica/PhpMySql/phpMySql/view/cambioDuenio.php">Cambiar dueño</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:3000/proyecto-sql-php-html/TP4%20din%C3%A1mica/PhpMySql/phpMySql/view/buscarPersona.php">Buscar persona/modificar</a>
+                <a class="nav-link" href="/info_autos/proyecto-sql-php-html/TP4 dinámica/PhpMySql/phpMySql/view/buscarPersona.php">Buscar persona/modificar</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
