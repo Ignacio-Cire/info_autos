@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +18,7 @@
 <body>
 
 <?php
-include_once '../view/estructura/nav.php';
+require_once '../view/estructura/nav.php';
 ?>
  <br>
 <?php

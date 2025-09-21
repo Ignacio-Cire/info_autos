@@ -2,6 +2,7 @@
 
 include_once 'BaseDatos.php';
 
+
 class Auto extends BaseDatos
 {
     // Atributos privados de la clase Auto

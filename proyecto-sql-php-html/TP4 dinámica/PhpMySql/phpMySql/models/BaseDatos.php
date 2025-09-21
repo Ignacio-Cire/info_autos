@@ -23,36 +23,37 @@ class BaseDatos extends PDO {
     private $error; // Último mensaje de error registrado.
     private $sql; // Última consulta SQL ejecutada.
 
-    // Constructor de la clase, inicializa atributos y establece la conexión.
     public function __construct() {
-        // Inicialización de atributos con valores predeterminados.
-        $this->engine = 'mysql'; // Establece el motor de base de datos a 'mysql'.
-        $this->host = 'localhost'; // Establece el host a 'localhost'.
-        $this->database = 'phpmysql'; // Nombre de la base de datos.
-        $this->user = 'root'; // Usuario de la base de datos.
-        $this->pass = 'root'; // Contraseña del usuario.
-        $this->debug = true; // Modo de depuración activado.
-        $this->error = ""; // Inicializa el mensaje de error vacío.
-        $this->sql = ""; // Inicializa la consulta SQL vacía.
-        $this->indice = 0; // Inicializa el índice a 0.
+    // Inicialización de atributos (esto está bien)
+    $this->engine = 'mysql';
+    $this->host = 'localhost';
+    $this->database = 'infoautos';//nombre real de la base de datos
+    $this->user = 'root';       //
+    $this->pass = 'root';       // 
+    $this->debug = true;
+    $this->error = "";
+    $this->sql = "";
+    $this->indice = 0;
 
-       
+    // Construye el DSN
+    $dns = $this->engine . ':dbname=' . $this->database . ";host=" . $this->host;
 
-        // Construye el DSN (Data Source Name) para PDO.
-        /**Conectar al servidor de base de datos: Aquí es donde te conectas a la base de datos usando credenciales como el nombre de usuario, la contraseña, el nombre del servidor y la base de datos. */
-
-        $dns = $this->engine . ':dbname=' . $this->database . ";host=" . $this->host;
-
-        try {
-            // Llama al constructor de la clase padre (PDO) para establecer la conexión.
-            parent::__construct($dns, $this->user='root', $this->pass='root', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-            $this->conec = true; // Conexión exitosa, establece conec a true.
-        } catch (PDOException $e) {
-            // Si ocurre un error en la conexión, captura la excepción y guarda el mensaje de error.
-            $this->sql = $e->getMessage();
-            $this->conec = false; // Establece conec a false indicando que la conexión falló.
+    try {
+        // ✅ CORRECCIÓN: Usa las variables ya asignadas, NO las reasignes
+        parent::__construct($dns, $this->user, $this->pass, array(
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION // Recomendado agregar esto
+        ));
+        $this->conec = true;
+    } catch (PDOException $e) {
+        $this->sql = $e->getMessage();
+        $this->conec = false;
+        // Para debugging, muestra el error
+        if ($this->debug) {
+            echo "Error de conexión: " . $e->getMessage();
         }
     }
+}
 
     /**
      * Inicia la conexión con el servidor y la base de datos.
