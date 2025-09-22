@@ -1,6 +1,7 @@
 <?php
 
 
+include_once __DIR__ . '/BaseDatos.php';
 
 class Persona extends BaseDatos
 {
@@ -137,7 +138,6 @@ class Persona extends BaseDatos
         return $consulta->execute();
     }
 
-    // Método estático para listar registros en la base de datos
 
     public static function listar($where = "")
     {

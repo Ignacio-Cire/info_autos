@@ -12,17 +12,18 @@
 </head>
 <body>
 
+
 <?php
+
+include_once __DIR__ . '/../models/Persona.php';
+
+
 include_once '../view/estructura/nav.php';
-?>
-<br>
 
 
-<?php
-include_once '../models/Persona.php';
 
 // Obtener todas las personas
-$personas = Persona::listar("1=1"); // Ajusta la consulta según la implementación
+$personas = Persona::listar(""); 
 
 echo '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">';
 echo '<link rel="stylesheet" href="./assets/css/error.css">';
