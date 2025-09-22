@@ -1,7 +1,12 @@
-<?php
 
-require '../../../../../../vendor/autoload.php';
+<?php
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 include_once '../../utils/datasubmited.php';
+include_once '../../controller/abmAuto.php';
+
 
 // Incluye Bootstrap CSS
 echo '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">';
