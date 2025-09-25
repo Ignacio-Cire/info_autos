@@ -57,8 +57,8 @@ include_once '../view/estructura/nav.php';
             <div id="error-message-domicilio" class="error-message"></div>
         </div>
 
-         <!-- reCAPTCHA -->
-         <div class="g-recaptcha mb-3" data-sitekey="6LfhnVkqAAAAAG7ueEm-vYRbLO1u2xLsECX_IOIF"></div>
+         <!-- reCAPTCHA 
+         <div class="g-recaptcha mb-3" data-sitekey="6LfhnVkqAAAAAG7ueEm-vYRbLO1u2xLsECX_IOIF"></div>-->
 
 
         <button type="submit" class="btn btn-outline-success" >Cargar</button>
